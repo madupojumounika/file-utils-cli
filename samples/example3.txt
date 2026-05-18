@@ -1,0 +1,4 @@
+hello world
+welcome to cli class
+hello node.js
+Hello everyone

@@ -5,7 +5,7 @@
 ![CLI Tool](https://img.shields.io/badge/CLI-Tool-orange)
 ![Status](https://img.shields.io/badge/status-active-success)
 
-A simple and powerful **Node.js Command Line Interface (CLI)** tool to perform file operations like counting words, lines, characters, cleaning text files and analyzing file statistics.
+A simple and powerful **Node.js Command Line Interface (CLI)** tool to perform file operations like counting words, lines, characters, cleaning text files, analyzing file statistics and searching keywords inside files.
 
 ---
 
@@ -28,8 +28,10 @@ It helps you:
 - 🔤 Count characters in a file
 - 🧹 Clean text files (remove extra spaces & empty lines)
 - 📑 Analyze file statistics (lines, words, characters, size, empty lines)
+- 🔍 Search keywords inside text files
 - 🎨 Beautiful CLI output using Chalk
 - ⚡ Fast and lightweight
+
 
 
 ---
@@ -77,8 +79,12 @@ file-utils clean samples/example2.txt
 ```
 ### 📑 Analyze File
 
-```
+```bash
 file-utils analyze samples/example1.txt
+```
+### 🔍 Search Keyword
+```
+file-utils search "hello" samples/example3.txt
 ```
 
 ### 🧾 Help & Version
@@ -100,6 +106,7 @@ file-utils-cli/
 │   ├── task1.js
 │   ├── task2.js
 │   ├── task3.js
+│   ├── task4.js
 ├── samples/
 │   ├── example1.txt
 │   ├── example2.txt
