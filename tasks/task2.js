@@ -1,13 +1,7 @@
 const fs = require("fs");
-const { Command } = require("commander");
 const chalk = require("chalk");
 
-const program = new Command();
-
-program
-  .name("cleaner")
-  .description("CLI tool to perform tasks on files")
-  .version("0.9.0");
+module.exports = (program) => {
 
 // clean txt file
 program
@@ -16,7 +10,7 @@ program
   .argument("<file>", "file to clean")
   .action((file) => {
 
-    console.log(chalk.yellowBright(`\n📂 Reading file: ${file}\n`));
+    console.log(chalk.yellowBright(`\n📂 Reading file: ${file}`));
 
     fs.readFile(file, "utf-8", (err, data) => {
 
@@ -34,7 +28,8 @@ program
 
       console.log(chalk.green("\n✨ Cleaned File Output:\n"));
       console.log(chalk.cyan(cleanedData));
+      console.log("\n");
     });
   });
 
-program.parse();
+}

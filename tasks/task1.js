@@ -1,13 +1,7 @@
 const fs = require("fs");
-const { Command } = require("commander");
 const chalk = require("chalk");
 
-const program = new Command();
-
-program
-  .name("counter")
-  .description("CLI tool to perform tasks on files")
-  .version("0.9.0");
+module.exports = (program) => {
 
 // count words
 program
@@ -83,4 +77,4 @@ program
     });
   });
 
-program.parse();
+}
