@@ -25,7 +25,9 @@ program
         console.log(chalk.red(err.message));
       } else{
 
-        const words = data.trim().split(/\s+/).length;
+        const words = data.trim()
+         ? data.trim().split(/\s+/).length
+        : 0;
 
         console.log(chalk.green(`✅ There are ${words} words in ${file}\n`));
       }
@@ -48,7 +50,9 @@ program
         console.log(chalk.red(err.message));
       } else{
 
-        const lines = data.split("\n").length;
+        const lines = data.trim() 
+        ? data.split("\n").length
+        : 0;
 
         console.log(chalk.green(`✅ There are ${lines} lines in ${file}\n`));
       }
