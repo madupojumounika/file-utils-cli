@@ -4,6 +4,7 @@ const program = new Command();
 
 const task1 = require("./tasks/task1");
 const task2 = require("./tasks/task2");
+const task3 = require("./tasks/task3");
 
 program
   .name("file-utils")
@@ -12,5 +13,6 @@ program
 
 task1(program);
 task2(program);
+task3(program);
 
 program.parse();
