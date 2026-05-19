@@ -45,7 +45,7 @@ program
       } else{
 
         const lines = data.trim() 
-        ? data.split("\n").length
+        ? data.trim().split("\n").length
         : 0;
 
         console.log(chalk.green(`✅ There are ${lines} lines in ${file}\n`));
@@ -77,4 +77,4 @@ program
     });
   });
 
-}
+};

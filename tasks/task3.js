@@ -9,7 +9,7 @@ program
     .description("analyze the text file")
     .argument("<file>", "analyze the file")
     .action((file) => {
-        console.log(chalk.yellowBright(`\n📂 Analyzing file: ${file}`));
+        console.log(chalk.yellowBright(`\n📂 Analyzing file: ${file}\n`));
 
         fs.readFile(file, "utf-8", (err, data) => {
             if(err){
@@ -42,4 +42,4 @@ program
             }
         })
     })
-}
+};
