@@ -1,11 +1,12 @@
 # 📁 file-utils-cli
 
+![npm version](https://img.shields.io/npm/v/@madupojumounika/file-utils-cli)
 ![Node.js](https://img.shields.io/badge/node-%3E%3D14-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![CLI Tool](https://img.shields.io/badge/CLI-Tool-orange)
 ![Status](https://img.shields.io/badge/status-active-success)
 
-A simple and powerful **Node.js Command Line Interface (CLI)** tool to perform file operations like counting words, lines, characters, cleaning text files, analyzing file statistics and searching keywords inside files.
+A simple and powerful **Node.js Command Line Interface (CLI)** tool to perform file operations like counting words, lines, characters, cleaning text files, analyzing file statistics and searching keywords inside text files.
 
 ---
 
@@ -37,6 +38,11 @@ It helps you:
 ---
 
 ## 📦 Installation
+
+### Install directly from npm
+```bash
+npm install -g @madupojumounika/file-utils-cli
+```
 
 ### 1. Clone the repository
 ```
