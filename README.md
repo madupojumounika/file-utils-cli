@@ -43,7 +43,14 @@ It helps you:
 ```bash
 npm install -g @madupojumounika/file-utils-cli
 ```
+or 
+```
+npm i -g @madupojumounika/file-utils-cli
+```
 
+---
+
+## Install Locally (Optional)
 ### 1. Clone the repository
 ```
 git clone https://github.com/madupojumounika/file-utils-cli.git
