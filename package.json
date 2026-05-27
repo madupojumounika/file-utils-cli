@@ -1,15 +1,14 @@
 {
-  "name": "file-utils-cli",
-  "version": "1.0.0",
+  "name": "@madupojumounika/file-utils-cli",
+  "version": "1.0.1",
   "description": "CLI tool for file operations",
-  "main" : "index.js",
+  "main": "index.js",
   "bin": {
-    "file-utils": "./bin/file-utils.js"
+    "file-utils": "bin/file-utils.js"
   },
   "scripts": {
     "start": "node index.js"
   },
-
   "keywords": [
     "cli",
     "nodejs",
@@ -17,15 +16,10 @@
     "command-line",
     "text-analyzer"
   ],
-
   "author": "Mounika Madupoju",
-
   "license": "MIT",
-
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^14.0.3"
   }
 }
-
-

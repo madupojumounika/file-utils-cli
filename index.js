@@ -10,7 +10,7 @@ const task4 = require("./tasks/task4");
 program
   .name("file-utils")
   .description("CLI tool for file operations")
-  .version("1.0.0");
+  .version("1.0.1");
 
 task1(program);
 task2(program);
